@@ -2,35 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="style.css">
   <script src="countdown.js"></script>
-  <!-- <script src=""></script> -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Movie Search</title>
 </head>
-<body> 
+<body>
   <div class="container">
-    <div class="header-container">
-      <h1>Philm Flix</h1>
+    <!--  -->
+    <div class="header-container"> 
+      <h1 class="movie-search">Movie Search</h1>
     </div>
     <div class="body-container">
-      <form method="get" class="movie_form" id="body">
-        <div class="movie-browser">
-          <h2>Movie Browser</h2>
-        </div>
-        <label class="title">Title</label>
-        <input type="text" class="search-bar" id="search-bar" name="title-search" maxlength="100" placeholder="Harry Potter and the Prisoner of Azkaban"> 
-        <br><br>
-        <div id="search-titles">
-          <input type="button" id="search-movies" class="search-movies" value="Search Matching Movies" />
-          <input type="button" id="search-all-movies" class="search-all-movies" value="Search All Movies" />
+      <form action="_blank">
+        <div class="form">
+          <div class="title-label">
+            <label>Title</label><br><br>
+          </div>
+          <div class="textbox">
+            <input type="text" maxlength="100" name="title-search" placeholder="e.g. Harry Potter and the Prisoner of Azkaban"> <br>
+          </div>
+          <div id="search-titles">
+            <input type="button" id="search-movies" class="search-movies" value="Search Matching Movies" />
+            <input type="button" id="search-all-movies" class="search-all-movies" value="Search All Movies" />
+          </div>
         </div>
       </form>
-      </div>
-      <footer class="footer-container" id="footer">
-        <div id="credit">Noom Peerapong (2015)</div>
-      </footer>
     </div>
+    <div class="footer-container">
+      Serge Kutuzov (2017)
+    </div>
+    <!--  -->
+  </div>
 </body>
 </html>
