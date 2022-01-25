@@ -1,0 +1,145 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/*body*/
+body {
+  /*background-color: rgb(26, 27, 27);*/
+  background-image: url('images/movie_theater.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-container {
+  margin: -8px; /*covers the whole header*/
+  padding: 15px; /**/
+}
+
+.body-container {
+  /* background: rgb(31, 178, 223); */
+  text-align: center; /*centers form*/
+
+  background-color: rgba(0, 0, 0, 0.700);
+}
+
+.footer-container {
+  /* background: rgb(233, 227, 39); */
+}
+
+/*centers form*/
+form
+{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/*centers the title, "Movie Browser"*/
+.movie-browser {
+  text-align: center;
+  color: white;
+}
+
+/*Buttons*/
+#search-movies, #search-all-movies {
+  border-radius: 6px; /*buttons will have rounded edges*/
+  padding: 8px;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  color: white;
+  /* padding-right: 15px; */
+  padding-right: 25px; /*giving gap between title and textbox*/
+}
+
+.movie-browser {
+  padding-bottom: 50px; /*adds space below movie browser*/
+}
+
+#search-bar {
+  padding: 8px;
+  width: 228px; /*width of the textbox*/
+  margin-bottom: 15px; /*adds space below textbox*/
+}
+
+/*centers the credit in the middle of the grid*/
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 1px 2px black;
+}
+
+/*Media Queries*/
+/*tiny screen specifically for ms edge*/
+/* @media screen and (min-width: 300px){
+  #body {
+    width: 300px;
+    text-align: center;
+  }
+
+  .header-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: 1/4;
+  }
+  
+  .body-container {
+    grid-column: 2/3;
+    padding: 15px;
+  }
+  
+  .footer-container {
+    grid-column: 1/4;
+  }
+
+
+} */
+
+/*small screen*/
+@media screen and (min-width: 500px){
+  #body{
+    width: 400px;
+    text-align: center; /*centers elements from title to buttons*/
+    margin-bottom: 45px;
+  }
+
+  .header-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: 1/4;
+  }
+  
+  .body-container {
+    grid-column: 2/3;
+    padding-bottom: 61px;
+  }
+  
+  .footer-container {
+    grid-column: 1/4;
+  }
+}
+
+/*medium screen*/
+@media screen and (min-width: 800px){
+  #body {
+    width: 500px;
+  }
+}
+
+/*large screen*/
+@media screen and (min-width: 1200px){
+
+}
