@@ -80,23 +80,19 @@ form
 
 /*Media Queries*/
 /*tiny screen specifically for ms edge*/
-/* @media screen and (min-width: 300px){
+ @media screen and (min-width: 300px){
   #body {
     width: 300px;
     text-align: center;
   }
 
   .header-container {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     grid-column: 1/4;
   }
   
   .body-container {
     grid-column: 2/3;
-    padding: 15px;
+
   }
   
   .footer-container {
@@ -104,7 +100,7 @@ form
   }
 
 
-} */
+}
 
 /*small screen*/
 @media screen and (min-width: 500px){
@@ -141,5 +137,7 @@ form
 
 /*large screen*/
 @media screen and (min-width: 1200px){
-
+  #body {
+    width: 500px;
+  }
 }
