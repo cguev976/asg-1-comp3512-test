@@ -99,7 +99,7 @@ label {
 /*Media Queries*/
 @media screen and (max-width: 1024px){
   #wrapper{ 
-    width: 550px;
+    width: 1024px;
     /* margin-bottom: 105px; */
    }
 
@@ -110,7 +110,7 @@ label {
 
 @media screen and (max-width: 899px){
   #wrapper{ 
-    width: 550px;
+    width: 899px;
     /* margin-bottom: 105px; */
    }
 
@@ -121,7 +121,7 @@ label {
 
 @media screen and (max-width: 699px){
   #wrapper{
-    width: 500px;
+    width: 699px;
     /* margin-bottom: 105px; */
   }
 
@@ -132,7 +132,7 @@ label {
 
 @media screen and (max-width: 500px){
   #wrapper{
-    width: 430px;
+    width: 500px;
     /* margin-bottom: 238px; */
   }
 
